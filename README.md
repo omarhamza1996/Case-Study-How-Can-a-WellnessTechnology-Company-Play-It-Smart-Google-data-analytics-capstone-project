@@ -75,7 +75,7 @@ when days = 'Friday' then 6
 when days = 'Saturday' then 7
      END
 ```
-[4.2](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Excel_files/1.Average_steps%20based_on_days.csv)
+[Output Table](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Excel_files/1.Average_steps%20based_on_days.csv)
 * Finding average steps per hour
 ![4.2](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/4.%20average%20steps%20by%20hour.png)
 
