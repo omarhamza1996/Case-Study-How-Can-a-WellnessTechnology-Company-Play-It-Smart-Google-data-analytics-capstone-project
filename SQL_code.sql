@@ -103,9 +103,10 @@ when days = 'Saturday' then 7
 
 --10. Average total intensity by hour
 
-select cast(activity_hour as time) , round(avg(total_intensity),2) as average_intensity from hourly_activity
+select cast(activity_hour as time) as Hour , round(avg(total_intensity),2) as average_intensity from hourly_activity
 
 group by cast(activity_hour as time)
+order by cast(activity_hour as time)
 
 --11. Total miutes of slep by day and total time in bed
 
