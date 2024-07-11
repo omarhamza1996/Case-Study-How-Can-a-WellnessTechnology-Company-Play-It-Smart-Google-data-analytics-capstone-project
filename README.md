@@ -135,6 +135,35 @@ group by id
 
 [Output table](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Excel_files/5.Usage_catagory.csv)
 
+* Average intensity by hour
+
+```sql
+select cast(activity_hour as time) as Hour , round(avg(total_intensity),2) as average_intensity from hourly_activity
+
+group by cast(activity_hour as time)
+order by cast(activity_hour as time)
+```
+[Output table](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Excel_files/8.%20avg%20intensity%20by%20hour.csv)
+
+* Total minutes asleep and total minutes in bed
+
+```sql
+select day as Day,sum(total_minutes_asleep) as Total_time_in_asleep,sum(total_time_in_bed) as Total_time_in_bed
+from sleep_day
+group by day 
+order by 
+case
+when day = 'Sunday' then 1
+when day = 'Monday' then 2  
+when day = 'Tuesday' then 3  
+when day = 'Wednesday' then 4
+when day = 'Thursday' then 5
+when day = 'Friday' then 6
+when day = 'Saturday' then 7
+     END
+```
+[Output table](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Excel_files/16.%20minuteses%20asleep%20and%20in%20bed.csv)
+
 * Average calories burned per day.
 ```sql
 select days, round(avg(calories),2) Average_calories_burned
