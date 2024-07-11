@@ -243,7 +243,7 @@ from last_logged_weight
 [Output result](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Excel_files/10.Weight%20Catagory.csv)
 
 # Share
-After analyzing the data, I am going to share the insights which I have found during the analysis. The charts were generated in Microsoft Powe BI and Tabelue.
+After analyzing the data, I am going to share the insights which I have found during the analysis. The charts were generated in Microsoft Power BI and Tabelue.
 * Average steps based on days
 ![14](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Visualization/1.Average_steps_based_on_days.png)
 
