@@ -256,6 +256,56 @@ After analyzing the data, I am going to share the insights which I have found du
 
 •	User’s usage of fitness tracking app by date
 
+![17](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Visualization/4.User%20usage%20by%20date.png)
+
+* User category based on use of fitness tracking app
+
+![18](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Visualization/5.%20User%20catagory%20based%20on%20usage.png)
+
+* Total steps vs total calories
+![18](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Visualization/3.total_steps%20vs%20calories%20burned.png)
+
+* Average active minutes based on days
+![18](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Visualization/7.%20Average%20active%20minutes%20based%20on%20days.png)
+
+* Average intensity by hour
+![19](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Visualization/8.%20Average%20intensity%20y%20hour.png)
+
+* Total sleep and in bed by day
+![20](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Visualization/9.%20Minutes%20asleep%20and%20in%20bed.png)
+
+* User’s weight categories
+![21](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Visualization/10.Weight%20Catagory.png)
+
+# Findings
+Based on the analysis and diagrams the findings are:
+* Steps by Day: Activity peaks on weekends, with the highest average steps recorded on Saturdays (7752 steps).
+* Steps per Hour: Activity gradually increases in the morning, peaks in the early afternoon (12 PM to 2 PM), and declines after 7 PM.
+* Steps category: Most of the users are active and somewhat active means the high potential of using the app
+* Steps vs. Calories: There is a positive correlation between steps taken and calories burned, indicating that more active users tend to burn more calories.
+* App Usage: App usage significantly increases around the end of March and remains consistently high through April and started to decline slightly in May.
+* User Categories: A majority of users fall into the "High" usage category, suggesting strong engagement with the app.
+* Weight: Most of the users are categorized as Overweight which indicates a high potential of using fitness tracker apps. 
+
+
+
+# Act
+
+###Recommendations
+Based on the usage of Fitbit tracking app my recommendation will be based on the Bellabit fitness tracking app. 
+* Target Weekends for Promotions: Given the peak in activity on weekends, Bellabeat could run weekend-specific challenges or promotions to engage users.
+* Morning and Afternoon Activity Push: Marketing campaigns could focus on encouraging morning and afternoon activities, aligning with natural activity peaks.
+* Fitness reminder: The app can use a reminder to do more activities based on active minutes.
+* Highlight Health Benefits: Emphasize the correlation between increased steps and calories burned in marketing materials to motivate users.
+* User Segmentation: Develop personalized marketing strategies for users in the "High" usage category to maintain engagement and encourage moderate users to increase their activity levels.
+
+Thank you for your time reading this.
+
+
+
+
+
+
 
 
 
