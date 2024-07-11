@@ -60,14 +60,103 @@ For my analysis, I will be using Microsoft SQL server. I have loaded all the dat
 Now I am going to start analysing the data.
 
 * Finding average steps based on days 
-[1](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/4.%20average%20steps%20by%20hour.png)
+![4](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/4.%20avg%20steps%20based%20on%20days.png)
 
 * Finding average steps per hour
+![4.2](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/4.%20average%20steps%20by%20hour.png)
+
+* I have found that the average steps for 35 users throughout the time of the data was 7283.43. I have decided to measure each user’s average steps into an ideal steps category based on the [National Library of Medicine](https://pubmed.ncbi.nlm.nih.gov/14715035/).
+
 ![5](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/5.ave%20steps%20catagory.png)
+* Calculating total steps vs total calories burned based on user.
 
-I have found that the average steps for 35 users throughout the time of the data was 7283.43. I have decided to measure each user’s average steps into an ideal steps category based on the [National Library of Medicine](https://pubmed.ncbi.nlm.nih.gov/14715035/).
+![6](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/6.%20total%20steps%20vs%20total%20calories.png)
 
-![6]()
+* Finding users using the Fitbit app in days.
+
+![7](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/7.%20Users%20using%20app%20in%20days.png)
+
+* I have decided to categorize the usage by user into High, Moderate and Low use.
+
+![8](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/8.Calagorising%20%20user%20using%20in%20days.png)
+
+* Average calories burned per day.
+
+![9](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/9.%20Average%20calories%20burned%20per%20day.png)
+
+* Active minutes category based on id
+
+![10](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/10.%20average%20minutes%20catagory%20in%20id.png)
+
+* Heart rate based on user
+![11](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/11.%20Heart%20rate%20based%20on%20catagory.png)
+
+* To show weight categories based on different users, firstly I executed the last logged date to find the last weight per user and saved the table as the last logged weight.
+
+![12](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/12.Weight_distrribution%20part%201.png)
+
+Then I saved the table as the last logged weight. Then used that table to calculate the weight category based on BMI based on  [Centers for Disease Control and Prevention](https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/).
+
+![13](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/13.%20Weight_distribution%20part%202.png)
+
+# Share
+After analyzing the data, I am going to share the insights which I have found during the analysis. The charts were generated in Microsoft Powe BI and Tabelue.
+* Average steps based on days
+![14]()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 
