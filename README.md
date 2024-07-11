@@ -122,18 +122,55 @@ group by activity_date
 
 * I have decided to categorize the usage by user into High, Moderate and Low use.
 
-![8](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/8.Calagorising%20%20user%20using%20in%20days.png)
+```sql
+select id, count(id) as user_used,
+case
+when count(id) between 0 and 20 then 'Low'
+when count(id) between 21 and 40 then 'Moderate'
+when count(id) > 40 then 'High'
+     END as usage_catagory
+from daily_activity
+group by id
+```
+
+[Output table](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Excel_files/5.Usage_catagory.csv)
 
 * Average calories burned per day.
+```sql
+select days, round(avg(calories),2) Average_calories_burned
+from daily_activity
+group by days
+order by
+case
+when days = 'Sunday' then 1
+when days = 'Monday' then 2  
+when days = 'Tuesday' then 3  
+when days = 'Wednesday' then 4
+when days = 'Thursday' then 5
+when days = 'Friday' then 6
+when days = 'Saturday' then 7
+     END
 
-![9](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/9.%20Average%20calories%20burned%20per%20day.png)
+```
+
+[Output table](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/9.%20Average%20calories%20burned%20per%20day.png)
 
 * Active minutes category based on id
 
-![10](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/10.%20average%20minutes%20catagory%20in%20id.png)
+```sql
+select id, round(avg(very_active_minutes),3) as average_very_active_minutes,round(avg(fairly_active_minutes),2)as average_fairly_active_minutes,
+round(avg(lightly_active_minutes),2) as average_lightly_active_minutes,round(avg(sedentary_minutes),2) as average_sedentary_minutes
+from daily_activity
+group by id
+```
+[Output table](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Excel_files/13.%20avg%20active%20minutes%20based%20on%20id.csv)
 
 * Heart rate based on user
-![11](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/11.%20Heart%20rate%20based%20on%20catagory.png)
+
+```sql
+https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Excel_files/14.%20Heartrate%20based%20on%20user.csv
+```
+![Output table](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Excel_files/14.%20Heartrate%20based%20on%20user.csv)
 
 * To show weight categories based on different users, firstly I executed the last logged date to find the last weight per user and saved the table as the last logged weight.
 
