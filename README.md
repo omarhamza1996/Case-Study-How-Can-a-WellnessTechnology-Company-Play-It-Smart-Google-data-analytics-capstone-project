@@ -168,8 +168,18 @@ group by id
 * Heart rate based on user
 
 ```sql
-https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Excel_files/14.%20Heartrate%20based%20on%20user.csv
+
+select Id,round(avg(Value),2) as average_heart_rate,
+case 
+when round(avg(Value),2) < 60 then 'Low'
+when round(avg(Value),2) between 60 and 100 then 'Normal'
+when round(avg(Value),2) > 100 then 'High' 
+end as Heart_rate_catagory
+from heart_rate
+group by Id
 ```
+[Output table](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Excel_files/14.%20Heartrate%20based%20on%20user.csv)
+
 ![Output table](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Excel_files/14.%20Heartrate%20based%20on%20user.csv)
 
 * To show weight categories based on different users, firstly I executed the last logged date to find the last weight per user and saved the table as the last logged weight.
