@@ -291,7 +291,7 @@ Based on the analysis and diagrams the findings are:
 
 # Act
 
-###Recommendations
+### Recommendations
 Based on the usage of Fitbit tracking app my recommendation will be based on the Bellabit fitness tracking app. 
 * Target Weekends for Promotions: Given the peak in activity on weekends, Bellabeat could run weekend-specific challenges or promotions to engage users.
 * Morning and Afternoon Activity Push: Marketing campaigns could focus on encouraging morning and afternoon activities, aligning with natural activity peaks.
