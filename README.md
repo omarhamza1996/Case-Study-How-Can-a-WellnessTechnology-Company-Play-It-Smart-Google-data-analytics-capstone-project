@@ -299,6 +299,12 @@ Based on the usage of Fitbit tracking app my recommendation will be based on the
 * Highlight Health Benefits: Emphasize the correlation between increased steps and calories burned in marketing materials to motivate users.
 * User Segmentation: Develop personalized marketing strategies for users in the "High" usage category to maintain engagement and encourage moderate users to increase their activity levels.
 
+
+### Reference:
+* https://github.com/emily1618/Google-Data-Analytics-Bellabeat-Case-Study
+* https://www.linkedin.com/pulse/bellabeat-case-study-how-can-wellness-company-play-smart-hussain-xlv9f/
+
+
 Thank you for your time reading this.
 
 
