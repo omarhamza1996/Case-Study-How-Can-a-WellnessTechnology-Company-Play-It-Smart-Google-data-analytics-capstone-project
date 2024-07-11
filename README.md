@@ -245,7 +245,16 @@ from last_logged_weight
 # Share
 After analyzing the data, I am going to share the insights which I have found during the analysis. The charts were generated in Microsoft Powe BI and Tabelue.
 * Average steps based on days
-![14]()
+![14](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Visualization/1.Average_steps_based_on_days.png)
+
+*  Average steps based on hour.
+![15](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Visualization/2.%20Average%20steps%20per%20hour.png)
+
+* Steps category based on average steps of user
+
+![16](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Visualization/6.%20steps%20catagory%20based%20on%20user.png)
+
+•	User’s usage of fitness tracking app by date
 
 
 
@@ -267,10 +276,6 @@ After analyzing the data, I am going to share the insights which I have found du
 
 
 
-
-
-```sql
-```
 
 
 
