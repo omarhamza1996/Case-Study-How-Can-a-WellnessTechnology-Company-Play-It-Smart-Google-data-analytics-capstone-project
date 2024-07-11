@@ -75,18 +75,49 @@ when days = 'Friday' then 6
 when days = 'Saturday' then 7
      END
 ```
-[Output Table](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Excel_files/1.Average_steps%20based_on_days.csv)
+
 * Finding average steps per hour
-![4.2](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/4.%20average%20steps%20by%20hour.png)
+
+```sql
+select cast(activity_hour as time) as Hour, avg(step_total) as average_steps
+from hourly_activity
+group by cast(activity_hour as time)
+order by cast(activity_hour as time)
+
+```
+[Output table](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Excel_files/2.Average_steps_per_hour.csv)
 
 * I have found that the average steps for 35 users throughout the time of the data was 7283.43. I have decided to measure each user’s average steps into an ideal steps category based on the [National Library of Medicine](https://pubmed.ncbi.nlm.nih.gov/14715035/).
+```
+select id ,avg(total_steps) as average_steps, 
+case 
+when avg(total_steps) < 5000 then 'Sedentary lifestyle'
+when avg(total_steps) between 5000 and 7499 then 'Low active'
+when avg(total_steps) between 7500 and 9999 then 'Somewhat active'
+when avg(total_steps) between 10000 and 12500 then 'Active'
+when avg(total_steps) > 12500 then 'Highly active'
+end as steps_catagory
+from daily_activity
+group by id
+```
 
-![5](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/5.ave%20steps%20catagory.png)
+[5](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Excel_files/6.user_steps_active_catagory.csv)
+
 * Calculating total steps vs total calories burned based on user.
+```
+select id,round(avg(total_steps),0) as total_steps,round(avg(calories),0) total_calories
+from daily_activity
+group by id
+```
 
-![6](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/6.%20total%20steps%20vs%20total%20calories.png)
+[Output table](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Excel_files/3.total_steps%20vs%20calories.csv)
 
 * Finding users using the Fitbit app in days.
+```
+select activity_date, count( distinct(id)) as usage_by_day
+from daily_activity
+group by activity_date
+```
 
 ![7](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/7.%20Users%20using%20app%20in%20days.png)
 
@@ -140,7 +171,8 @@ After analyzing the data, I am going to share the insights which I have found du
 
 
 
-
+```sql
+```
 
 
 
