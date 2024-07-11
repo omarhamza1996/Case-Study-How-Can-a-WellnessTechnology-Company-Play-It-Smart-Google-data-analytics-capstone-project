@@ -118,7 +118,7 @@ from daily_activity
 group by activity_date
 ```
 
-![Output table](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/7.%20Users%20using%20app%20in%20days.png)
+[Output table](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Excel_files/4.User_usage_by_date.csv)
 
 * I have decided to categorize the usage by user into High, Moderate and Low use.
 
@@ -180,15 +180,38 @@ group by Id
 ```
 [Output table](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Excel_files/14.%20Heartrate%20based%20on%20user.csv)
 
-![Output table](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Excel_files/14.%20Heartrate%20based%20on%20user.csv)
 
 * To show weight categories based on different users, firstly I executed the last logged date to find the last weight per user and saved the table as the last logged weight.
 
-![12](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/12.Weight_distrribution%20part%201.png)
+```sql
+WITH MaxDatePerId AS (
+    SELECT Id, MAX(Date) AS MaxDate
+    FROM weightLogInfo
+    GROUP BY Id
+)
+-- Joining with the original table to get the entire row
+SELECT wli.*
+FROM weightLogInfo wli
+INNER JOIN MaxDatePerId mdpi ON wli.Id = mdpi.Id AND wli.Date = mdpi.MaxDate
+```
+
+[Output table](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Excel_files/15%20Last%20logged%20weight.csv)
 
 Then I saved the table as the last logged weight. Then used that table to calculate the weight category based on BMI based on  [Centers for Disease Control and Prevention](https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/).
 
-![13](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/13.%20Weight_distribution%20part%202.png)
+```sql
+select id,
+case 
+when BMI < 18.5 then 'Underweight'
+when BMI between 18.5 and 24.9 then 'Healthy weight'
+when BMI between 25.0 and 29.9 then 'Over weight'
+when BMI > 30 then 'Obesity'
+end as Weight_catagory
+
+from last_logged_weight
+```
+
+[Output result](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Excel_files/10.Weight%20Catagory.csv)
 
 # Share
 After analyzing the data, I am going to share the insights which I have found during the analysis. The charts were generated in Microsoft Powe BI and Tabelue.
