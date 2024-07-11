@@ -60,7 +60,7 @@ For my analysis, I will be using Microsoft SQL server. I have loaded all the dat
 Now I am going to start analysing the data.
 
 * Finding average steps based on days 
-'''r
+```r
 select days, AVG(total_steps) as average_steps
 from daily_activity
 group by days
@@ -74,7 +74,7 @@ when days = 'Thursday' then 5
 when days = 'Friday' then 6
 when days = 'Saturday' then 7
      END
-'''
+```
 
 * Finding average steps per hour
 ![4.2](https://github.com/omarhamza1996/Case-Study-How-Can-a-WellnessTechnology-Company-Play-It-Smart-Google-data-analytics-capstone-project/blob/main/Pictures/4.%20average%20steps%20by%20hour.png)
