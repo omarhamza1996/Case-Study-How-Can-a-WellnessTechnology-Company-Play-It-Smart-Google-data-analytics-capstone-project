@@ -60,7 +60,7 @@ For my analysis, I will be using Microsoft SQL server. I have loaded all the dat
 Now I am going to start analysing the data.
 
 * Finding average steps based on days 
-''r
+'''r
 select days, AVG(total_steps) as average_steps
 from daily_activity
 group by days
